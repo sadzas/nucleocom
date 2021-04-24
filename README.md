@@ -1,2 +1,3 @@
-# nucleocom
-Aplicación central para la conexión con los adaptadores.
+# matecore
+
+Aplicación en JAVA para la ejecución de MATE.

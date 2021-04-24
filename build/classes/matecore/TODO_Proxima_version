@@ -1,0 +1,6 @@
+1) Cada entidad (cualquier tipo de operador que interactue con la aplicacion) debe tener un ID unico interno. Este ID unico debe ser el vinculo con todos los datos de la entidad.
+Ejemplo: 
+Tengo que dejar de vincular Extension / agenteUsuario / WebSocket.
+En cambio tengo que vincular un ID unico a todos esos datos para buscarlos cuando sea necesario.
+
+2) 

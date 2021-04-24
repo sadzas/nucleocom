@@ -1,0 +1,47 @@
+31/01/2020 v1.2.1
+
+- Se solucionó inconveniente con el evento Hold.
+- Se agregó la información del Ring del agente en las tablas: reporteAgente y 
+agentesLog.
+- Se soluionó inconvenientes con el tiempo de ringueo de en el agente.
+
+07/11/2019 v1.2.0
+
+- Se agregó la autopausa, reemplazando la funcionalidad wrapup time de FreePBX.
+
+02/09/2019 v1.1.0
+
+- Se agregó la propiedad agenteAlarma a la clase Agente. Ahora los agentes
+pueden configurar alarmas personales.
+
+- Se solucionaron inconvenientes con la captura del hold para el registro de la
+tabla salienteslog.
+
+- Se reduce el tiempo del PING de 120 a 60 segundos. De esa forma se reutiliza
+la función del tiempo para la alarma.
+
+- Se reduce el tiempo de chequeo de agente logueado de 30 a 10 minutos.
+
+- Se reduce el tiempo permitido de agente sin operar de 9 a 8 horas.
+
+- Se modificaron todos los controladores de tiempo de segundos a milisegundos.
+
+- Se dejó de utilizar la API Date para todo el código reemplazándola por 
+SimpleDateFormat. La API SimpleDateFormat se utilizó solo para el impacto en 
+la DB. El resto del código se maneja con variables long.
+
+- Se corrigió "antendido" en los impactos de DB por "atendido"
+
+18/06/2019 v1.0.1
+
+- Se cambiaron los detalles de error para QueueMemberEvent.
+AST_DEVICE_UNAVAILABLE => No Registrado
+AST_DEVICE_INVALID => Estado Invalido
+AST_DEVICE_UNKNOWN => Estado Desconocido
+
+- Se agregó el catch en la función agenteObtieneIdAgente.
+
+- Se eliminó el catch en la función onError del Websocket.
+
+24/05/2019 v1.0.0
+Se pone en produccion la version final de MATE.
